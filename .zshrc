@@ -74,7 +74,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	copybuffer
+	tmux
 	history
 	jsontools
 )
