@@ -72,11 +72,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
 	tmux
+	zsh-syntax-highlighting
+	zsh-autosuggestions
 	history
-	jsontools
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,9 +99,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export KUBECONFIG="/home/ta747375ki/.kube/config"
+
+alias python=python3
+alias pip=pip3
+alias vim=nvim
